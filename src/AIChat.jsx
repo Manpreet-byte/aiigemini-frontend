@@ -726,6 +726,7 @@ const App = ({ user, onLogout }) => {
           currentChatId={currentChatId}
           onSelectChat={handleSelectChat}
           onNewChat={handleNewChat}
+          onClose={() => setShowHistory(false)}
           darkMode={darkMode}
         />
       )}
