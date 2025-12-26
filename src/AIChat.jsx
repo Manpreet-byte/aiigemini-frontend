@@ -35,8 +35,8 @@ const App = ({ user, onLogout }) => {
   const [userMessageCount, setUserMessageCount] = useState(0);
   // Current chat session ID
   const [currentChatId, setCurrentChatId] = useState(null);
-  // Show/hide chat history sidebar
-  const [showHistory, setShowHistory] = useState(true);
+  // Show/hide chat history sidebar (default: hidden)
+  const [showHistory, setShowHistory] = useState(false);
   // Voice recording state
   const [isRecording, setIsRecording] = useState(false);
   // Selected image for upload
