@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https: http:; connect-src 'self' https://firebasestorage.googleapis.com https://generativelanguage.googleapis.com https://*.vercel.app https://identitytoolkit.googleapis.com https://firestore.googleapis.com https://image.pollinations.ai"
+        }
+      ]
+    }
+  ]
+}
