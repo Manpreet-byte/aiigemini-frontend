@@ -8,7 +8,7 @@ import { collection, addDoc, query, orderBy, onSnapshot, serverTimestamp, where,
 
 // --- CONFIGURATION ---
 // Backend API base URL (defaults to local dev server)
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001/api';
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001/api').replace(/\/+$/, '');
 const API_URL = `${API_BASE_URL}/chat`;
 const VISION_API_URL = `${API_BASE_URL}/vision`;
 const SYSTEM_INSTRUCTION = "You are a helpful and friendly AI chat assistant. Keep your responses concise and engaging, and always answer truthfully and ethically. Respond using markdown. If the user asks you to generate, create, or draw an image, respond with '[IMAGE_REQUEST: description]' where description is a detailed prompt for the image they want.";
